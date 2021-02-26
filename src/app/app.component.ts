@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cap3-camera-ex';
+  image: any
+
+  async takePhoto() {
+    alert('click on takePhoto()')
+  }
 }
