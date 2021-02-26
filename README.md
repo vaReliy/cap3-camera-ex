@@ -1,27 +1,40 @@
 # Cap3CameraEx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+### This project was created for demonstrate Capasitor (3.0.0-beta.3) Camera plugin issue.
 
-## Development server
+## Requirements:
+- NodeJS 12+
+- Android Studio 4+
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How to run:
+```
+npm install
+npm build
+npx cap sync
 
-## Code scaffolding
+#To run in web:
+npm start
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# To run mobile app:
+npx cap open android
+```
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Issue problem:  
+While using @capacitor/camera plugin for loading photo/images the app has been crashing.  
+App crashing accures if used parameter "allowEditing: true", after click to "Done" button in android app.  
+The web app works fine.  
+I don't have the opportunity to test iOS app 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<h2>Steps to reproduce (web, android):</h2>
+<p>1. Click to "tackePhoto" button</p>
+<p>2. Load local or take photo from webcam</p>
+<p>3. Click "Ok" buton</p>
+<p>4*. (Android) Try to edit and save photo</p>
+<br>
+<h2>Expected result</h2>
+<p>The image has been load (and appear on page) successefull</p>
+<br>
+<h2>Actual result</h2>
+<p>The application has been crashed</p>
