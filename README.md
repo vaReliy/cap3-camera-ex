@@ -1,6 +1,14 @@
 # Cap3CameraEx
 
-### This project was created for demonstrate Capasitor (3.0.0-beta.3) Camera plugin issue.
+### This project was created for demonstrate Capasitor (3.0.0-beta.6) Camera plugin issue.
+
+## Package versions:
+```
+"@capacitor/android": "^3.0.0-beta.6",
+"@capacitor/camera": "^0.4.2",
+"@capacitor/cli": "^3.0.0-beta.6",
+"@capacitor/core": "^3.0.0-beta.6",
+```
 
 ## Requirements:
 - NodeJS 12+
@@ -9,7 +17,7 @@
 ## How to run:
 ```
 npm install
-npm build
+npm run build
 npx cap sync
 
 #To run in web:

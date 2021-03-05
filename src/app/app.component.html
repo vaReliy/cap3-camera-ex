@@ -23,21 +23,14 @@
 
 <ng-template #error>
   <pre>
-    02/26 20:25:40: Launching 'app' on Pixel 4 API 30.
-    Install successfully finished in 308 ms.
+    03/05 12:46:35: Launching 'app' on No Devices.
+    Install successfully finished in 3 s 370 ms.
     $ adb shell am start -n "com.example.app/com.example.app.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -D
     Waiting for application to come online: com.example.app.test | com.example.app
     Waiting for application to come online: com.example.app.test | com.example.app
-    Connected to process 5478 on device 'emulator-5554'.
-    Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
-    I/com.example.ap: Not late-enabling -Xcheck:jni (already on)
-    I/com.example.ap: Unquickening 12 vdex files!
-    W/com.example.ap: Unexpected CPU variant for X86 using defaults: x86
-    W/ActivityThread: Application com.example.app is waiting for the debugger on port 8100...
-    I/System.out: Sending WAIT chunk
     Waiting for application to come online: com.example.app.test | com.example.app
     Connecting to com.example.app
-    Connected to the target VM, address: 'localhost:40633', transport: 'socket'
+    Connected to the target VM, address: 'localhost:40147', transport: 'socket'
     Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
     I/com.example.ap: Not late-enabling -Xcheck:jni (already on)
     I/com.example.ap: Unquickening 12 vdex files!
@@ -45,13 +38,18 @@
     W/ActivityThread: Application com.example.app is waiting for the debugger on port 8100...
     I/System.out: Sending WAIT chunk
     I/System.out: Debugger has connected
+        waiting for debugger to settle...
     I/System.out: waiting for debugger to settle...
-    I/chatty: uid=10154(com.example.app) identical 3 lines
     I/System.out: waiting for debugger to settle...
     I/System.out: waiting for debugger to settle...
-    I/chatty: uid=10154(com.example.app) identical 1 line
     I/System.out: waiting for debugger to settle...
-    I/System.out: debugger has settled (1416)
+    I/System.out: waiting for debugger to settle...
+    I/System.out: waiting for debugger to settle...
+    I/System.out: waiting for debugger to settle...
+    I/System.out: waiting for debugger to settle...
+    I/System.out: waiting for debugger to settle...
+    I/System.out: waiting for debugger to settle...
+    I/System.out: debugger has settled (1431)
     D/NetworkSecurityConfig: No Network Security Config specified, using platform default
     D/NetworkSecurityConfig: No Network Security Config specified, using platform default
     D/libEGL: loaded /vendor/lib/egl/libEGL_emulation.so
@@ -78,52 +76,51 @@
     E/Capacitor: Unable to read file at path public/plugins
     D/Capacitor: Loading app at http://localhost
     W/com.example.ap: Accessing hidden method Landroid/media/AudioManager;->getOutputLatency(I)I (greylist, reflection, allowed)
-    D/HostConnection: HostConnection::get() New Host Connection established 0xe90cb7d0, tid 5596
     W/cr_media: Requires BLUETOOTH permission
     D/Capacitor: App started
-    D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_async_frame_commands ANDROID_EMU_gles_max_version_2 
+    D/HostConnection: HostConnection::get() New Host Connection established 0xea3a31d0, tid 2157
     D/Capacitor: App resumed
+    D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_async_frame_commands ANDROID_EMU_gles_max_version_2 
     E/chromium: [ERROR:gl_surface_egl.cc(549)] eglChooseConfig failed with error EGL_SUCCESS
-    D/EGL_emulation: eglCreateContext: 0xe90cd440: maj 2 min 0 rcv 2
-    D/EGL_emulation: eglMakeCurrent: 0xe90cd440: ver 2 0 (tinfo 0xb8e67a30) (first time)
-    E/chromium: [ERROR:gl_surface_egl.cc(549)] eglChooseConfig failed with error EGL_SUCCESS
+    D/EGL_emulation: eglCreateContext: 0xea3a2590: maj 2 min 0 rcv 2
+    D/EGL_emulation: eglMakeCurrent: 0xea3a2590: ver 2 0 (tinfo 0xba949a10) (first time)
     D/Capacitor: Handling local request: http://localhost/
-    D/HostConnection: HostConnection::get() New Host Connection established 0xe90cf890, tid 5547
+    E/chromium: [ERROR:gl_surface_egl.cc(549)] eglChooseConfig failed with error EGL_SUCCESS
+    D/HostConnection: HostConnection::get() New Host Connection established 0xea3ae060, tid 2051
     D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_async_frame_commands ANDROID_EMU_gles_max_version_2 
     W/OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
-    D/EGL_emulation: eglCreateContext: 0xe90cfdd0: maj 2 min 0 rcv 2
-    D/EGL_emulation: eglMakeCurrent: 0xe90cfdd0: ver 2 0 (tinfo 0xb8e41890) (first time)
+    D/EGL_emulation: eglCreateContext: 0xea3b09f0: maj 2 min 0 rcv 2
+    D/EGL_emulation: eglMakeCurrent: 0xea3b09f0: ver 2 0 (tinfo 0xba953130) (first time)
     I/Gralloc4: mapper 4.x is not supported
     D/HostConnection: createUnique: call
-        HostConnection::get() New Host Connection established 0xe90d1a40, tid 5547
+    D/HostConnection: HostConnection::get() New Host Connection established 0xea3b07c0, tid 2051
     D/goldfish-address-space: allocate: Ask for block of size 0x100
-        allocate: ioctl allocate returned offset 0x3fd10b000 size 0x2000
+        allocate: ioctl allocate returned offset 0x3fbb48000 size 0x2000
     D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_async_frame_commands ANDROID_EMU_gles_max_version_2 
     I/VideoCapabilities: Unsupported profile 4 for video/mp4v-es
+    I/Choreographer: Skipped 36 frames!  The application may be doing too much work on its main thread.
     W/cr_MediaCodecUtil: HW encoder for video/avc is not available on this device.
-    D/EGL_emulation: eglCreateContext: 0xe90cf4a0: maj 2 min 0 rcv 2
+    D/EGL_emulation: eglCreateContext: 0xea3b5300: maj 2 min 0 rcv 2
     D/Capacitor: Handling local request: http://localhost/styles.css
+    D/Capacitor: Handling local request: http://localhost/runtime.js
+    D/Capacitor: Handling local request: http://localhost/polyfills.js
     D/Capacitor: Handling local request: http://localhost/vendor.js
     D/Capacitor: Handling local request: http://localhost/main.js
-    D/Capacitor: Handling local request: http://localhost/polyfills.js
-    D/Capacitor: Handling local request: http://localhost/runtime.js
     I/Capacitor/Console: File: http://localhost/vendor.js - Line 38019 - Msg: Angular is running in development mode. Call enableProdMode() to enable production mode.
     D/Capacitor: Handling local request: http://localhost/favicon.ico
-    V/Capacitor/Plugin: To native (Capacitor plugin): callbackId: 20065059, pluginId: Camera, methodName: getPhoto
-    V/Capacitor: callback: 20065059, pluginId: Camera, methodName: getPhoto, methodData: {{'{'}}"quality":90,"allowEditing":true,"resultType":"uri","saveToGallery":true{{'}'}}
+    V/Capacitor/Plugin: To native (Capacitor plugin): callbackId: 101637626, pluginId: Camera, methodName: getPhoto
+    V/Capacitor: callback: 101637626, pluginId: Camera, methodName: getPhoto, methodData: {{'{'}}"quality":90,"allowEditing":true,"resultType":"uri","saveToGallery":true{{'}'}}
     D/Capacitor: App paused
     D/Capacitor: App stopped
     D/Capacitor: Saving instance state!
-    D/Capacitor: Unable to find a Capacitor plugin to handle requestCode, trying Cordova plugins 167584407
+    D/Capacitor: Unable to find a Capacitor plugin to handle requestCode, trying Cordova plugins 1722798206
     D/Capacitor: App restarted
     D/Capacitor: App started
     D/Capacitor: App resumed
     D/Capacitor: App paused
     D/Capacitor: App stopped
     D/Capacitor: Saving instance state!
-    W/System: A resource failed to call release. 
-        A resource failed to call release. 
-    D/Capacitor: Unable to find a Capacitor plugin to handle requestCode, trying Cordova plugins 478330788
+    D/Capacitor: Unable to find a Capacitor plugin to handle requestCode, trying Cordova plugins 589404913
     D/Capacitor: App restarted
     D/Capacitor: App started
     W/System.err: java.lang.reflect.InvocationTargetException
@@ -131,35 +128,38 @@
     W/System.err:     at com.getcapacitor.Plugin.triggerActivityCallback(Plugin.java:165)
             at com.getcapacitor.Plugin.lambda$initializeActivityLaunchers$0$Plugin(Plugin.java:120)
     W/System.err:     at com.getcapacitor.-$$Lambda$Plugin$9tit0PZrRMA5UA4Z_xqI4yDk4JY.onActivityResult(Unknown Source:6)
-    W/System.err:     at androidx.activity.result.ActivityResultRegistry$1.onStateChanged(ActivityResultRegistry.java:145)
+            at androidx.activity.result.ActivityResultRegistry$1.onStateChanged(ActivityResultRegistry.java:145)
     W/System.err:     at androidx.lifecycle.LifecycleRegistry$ObserverWithState.dispatchEvent(LifecycleRegistry.java:354)
-    W/System.err:     at androidx.lifecycle.LifecycleRegistry.forwardPass(LifecycleRegistry.java:265)
+            at androidx.lifecycle.LifecycleRegistry.forwardPass(LifecycleRegistry.java:265)
     W/System.err:     at androidx.lifecycle.LifecycleRegistry.sync(LifecycleRegistry.java:307)
             at androidx.lifecycle.LifecycleRegistry.moveToState(LifecycleRegistry.java:148)
     W/System.err:     at androidx.lifecycle.LifecycleRegistry.handleLifecycleEvent(LifecycleRegistry.java:134)
-    W/System.err:     at androidx.lifecycle.ReportFragment.dispatch(ReportFragment.java:68)
+            at androidx.lifecycle.ReportFragment.dispatch(ReportFragment.java:68)
     W/System.err:     at androidx.lifecycle.ReportFragment$LifecycleCallbacks.onActivityPostStarted(ReportFragment.java:187)
             at android.app.Activity.dispatchActivityPostStarted(Activity.java:1362)
     W/System.err:     at android.app.Activity.performStart(Activity.java:8061)
-    W/System.err:     at android.app.ActivityThread.handleStartActivity(ActivityThread.java:3475)
+            at android.app.ActivityThread.handleStartActivity(ActivityThread.java:3475)
     W/System.err:     at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:221)
             at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:201)
     W/System.err:     at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:173)
-    W/System.err:     at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:97)
+            at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:97)
     W/System.err:     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2066)
-    W/System.err:     at android.os.Handler.dispatchMessage(Handler.java:106)
+            at android.os.Handler.dispatchMessage(Handler.java:106)
             at android.os.Looper.loop(Looper.java:223)
     W/System.err:     at android.app.ActivityThread.main(ActivityThread.java:7656)
-            at java.lang.reflect.Method.invoke(Native Method)
+    W/System.err:     at java.lang.reflect.Method.invoke(Native Method)
     W/System.err:     at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
-            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+    W/System.err:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
     W/System.err: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.getcapacitor.PluginCall.reject(java.lang.String)' on a null object reference
-            at com.capacitorjs.plugins.camera.CameraPlugin.processPickedImage(CameraPlugin.java:281)
-    W/System.err:     at com.capacitorjs.plugins.camera.CameraPlugin.processEditedImage(CameraPlugin.java:317)
+    W/System.err:     at com.capacitorjs.plugins.camera.CameraPlugin.processPickedImage(CameraPlugin.java:281)
+            at com.capacitorjs.plugins.camera.CameraPlugin.processEditedImage(CameraPlugin.java:317)
           ... 26 more
     D/AndroidRuntime: Shutting down VM
+        
+        
+        --------- beginning of crash
     E/AndroidRuntime: FATAL EXCEPTION: main
-        Process: com.example.app, PID: 5478
+        Process: com.example.app, PID: 1779
         java.lang.NullPointerException: Attempt to invoke virtual method 'boolean com.getcapacitor.PluginCall.isReleased()' on a null object reference
             at com.getcapacitor.Plugin.triggerActivityCallback(Plugin.java:170)
             at com.getcapacitor.Plugin.lambda$initializeActivityLaunchers$0$Plugin(Plugin.java:120)
@@ -186,7 +186,7 @@
             at java.lang.reflect.Method.invoke(Native Method)
             at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
             at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
-    I/Process: Sending signal. PID: 5478 SIG: 9
-    Disconnected from the target VM, address: 'localhost:40633', transport: 'socket'
+    I/Process: Sending signal. PID: 1779 SIG: 9
+    Disconnected from the target VM, address: 'localhost:40147', transport: 'socket'    
   </pre>
 </ng-template>
